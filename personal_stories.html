@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="caring&living.css">
+    <link rel="stylesheet" href="personal_stories.css">
+
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Personal Stories | Johnson & Johnson</title>
+    <link rel="icon" href="data/head.png">
+</head>
+
+<body>
+    <!--Side bar-->
+    <div id="main_container">
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus icon'><img src="data\jandj.gif" alt=""></i>
+                <div class="logo_name"></div>
+
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+                </li>
+
+                <div>
+                    <a href="#">
+                        <img src="data\flag.png" alt="error" id="flag">
+                    </a>
+                </div>
+
+
+                <li>
+                    <a href="project.php">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        <i class='bx bxs-box'></i>
+                        <span class="links_name">Products</span>
+                    </a>
+                    <span class="tooltip">Products</span>
+                </li>
+
+                <li>
+                    <a href="caring&living.html">
+                        <i class='bx bx-heart-circle'></i>
+                        <span class="links_name">Caring & Giving</span>
+                    </a>
+                    <span class="tooltip">Caring & Giving</span>
+                </li>
+
+                <li>
+                    <a href="personal_stories.html">
+                        <i class='bx bx-medal'></i>
+                        <span class="links_name">Personal Stories</span>
+                    </a>
+                    <span class="tooltip">Personal Stories </span>
+                </li>
+
+                <div>
+                    <a href="#">
+                        <img src="data\heart.gif" alt="" id="heart">
+                    </a>
+                </div>
+            </ul>
+            <!--Java Script code side menu-->
+            <script>
+                let sidebar = document.querySelector(".sidebar");
+                let closeBtn = document.querySelector("#btn");
+                let searchBtn = document.querySelector(".bx-search");
+                closeBtn.addEventListener("click", () => {
+                    sidebar.classList.toggle("open");
+                    menuBtnChange();//calling the function(optional)
+                });
+
+                searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+                    sidebar.classList.toggle("open");
+                    menuBtnChange(); //calling the function(optional)
+                });
+
+                // following are the code to change sidebar button(optional)
+                function menuBtnChange() {
+                    if (sidebar.classList.contains("open")) {
+                        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+                    } else {
+                        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+                    }
+                }
+            </script>
+            <!--popup HTML-->
+            <footer>
+        <div class="container">
+          <img src="data/cross.png" alt="" class="close">
+          <p>This site uses cookies as described in our <a href="#" id="cockies">Cookie Policy</a>.
+            Please click the "Accept"<br>
+            button or continue to use our site if you agree to our use of cookies.</p>
+          <button type="button">Accept</button>
+        </div>
+      </footer>
+      <!--Popup script-->
+            <script src="popup.js"></script>
+        </div>
+        <!-- Other Section code-->
+        <section class="home-section">
+            <!--head Heading-->
+            <div class="text_div">
+                <p id="text">Johnson & Johnson Announces Plans to Separate Consumer Health Business<a href="#"
+                        id="learn">Learn
+                        More</a></p>
+            </div>
+            <!--Products Heading-->
+            <div id="products_heading">
+                <h3>Personal Stories</h3>
+            </div>
+            <!--Products image dfiv-->
+            <div id="product_img_div">
+                <h3 id="behind_txt">
+                    3 Ways Johnson & Johnson Is Proud to <br> Support People With Diverse Abilities</h3>
+            </div>
+
+            <!--3 pics and text-->
+            <div class="roundpic_div" id="images_div">
+                <div class="round_img"><a href="#"><img src="data/q.jfif" alt=""></a>
+                    <h5><a href="#">The Story Behind <br> BAND-AID® Brand <br> OURTONE™ Adhesive <br> Bandages</a></h5>
+                </div>
+
+                <div class="round_img"><a href="#"><img src="data/w.jfif" alt=""></a>
+                    <h5><a href="#">9 Ways Johnson & <br> Johnson Is Sharing Its <b></b> Vision for Good With <br> the
+                            World</a></h5>
+                </div>
+
+                <div class="round_img"><a href="#"><img src="data/r.jfif" alt=""></a>
+                    <h5><a href="#">5 Impactful Ways <br> Johnson & Johnson <br> Supports Nurses and <br> the Incredible
+                            Work <br> They Do</a></h5>
+                </div>
+            </div>
+
+            <!--Three images div-->
+            <div id="transparent1">
+                <div id="three_pics_div">
+                    <div id="images_3">
+                        <div id="recent_txt">
+                            <h3>Featured Stories</h3>
+                        </div>
+
+                        <div id="three_img_div" class="images3">
+                            <a href="#">
+                                <div class="div"> <img src="data/t.png" alt="">
+                                    <br>
+                                    <a href="#">"1.5 Million Children Are Living <br> With HIV in Sub-Saharan <br> Africa. I'm One of the Doctors <br> Treating These Young Patients <br> Every Day"
+                                    </a>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="div"><img src="data/y.jfif" alt="">
+                                    <br>
+                                    <a href="#">"How Johnson & Johnson <br> Helped Us Adopt 11 Children"</a>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="div"><img src="data/u.jfif" alt="">
+                                    <br>
+                                    <a href="#">Why Tarana Burke Thinks <br> Vulnerability Is Actually the Key <br> to Success</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--for three more images-->
+                    <div id="transparent2">
+                        <div id="three_pics_div">
+                            <div id="images_3">
+                                <div id="three_img_div" class="images3">
+                                    <a href="#">
+                                        <div class="div"> <img src="data/i.jfif" alt="">
+                                            <br>
+                                            <a href="#"> The Double Pandemic: How <br> COVID-19 Is Bringing to Light
+                                                <br> Health Inequities That Have <br> Long Been a Problem in <br>
+                                                America</a>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="div"><img src="data/o.jfif" alt="">
+                                            <br>
+                                            <a href="#">More Than Skin Deep: Meet a <br> Johnson & Johnson Employee <br> 
+                                              Who's Committed to Creating <br> More Inclusive Skincare <br> 
+                                              Products for Women of Color <br> Women</a>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="div"><img src="data/p.jfif" alt="">
+                                            <br>
+                                            <a href="#">"What It's Like to Be in a Clinical Trial": 3 People Share Their Personal Stories</a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <button id="btn1"><a href="#">See All Stories</a></button>
+                            </div>
+                            <!--Three Round Pics-->
+                            <!--3 round pics-->
+                            <div class="roundpic_div2">
+
+                                <div class="round_img2"><a href="#"><img src="data/z.jfif" alt=""></a>
+                                    <h5><a href="#"> "AIDS Won’t Stop for COVID-19": Meet 3 Inspiring Women Who Are as Committed as Ever to Making HIV History</a></h5>
+                                    <h6><a href="#">Read the Story</a></h6>
+                                    <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                                </div>
+
+                                <div class="round_img2"><a href="#"><img src="data/x.jfif" alt=""></a>
+                                    <h5><a href="#"> He Helped Pioneer Robotic Surgery. Now He Wants to Reinvent Lung Cancer Care He Helped Pioneer Robotic Surgery.</a></h5>
+                                    <h6><a href="#">Read the Story</a></h6>
+                                    <a href="#"><i class="fas fa-chevron-circle-right" id="img2_next2"></i></a>
+                                </div>
+
+                                <div class="round_img2"><a href="#"><img src="data/v.jfif" alt=""></a>
+                                    <h5><a href="#">"We Weren't Supposed to Get Tuberculosis": Meet Two Surprising Survivors Who Could Be You</a></h5>
+                                    <h6><a href="#">Read the Story</a></h6>
+                                    <a href="#"><i class="fas fa-chevron-circle-right" id="img3_next3"></i></a>
+                                </div>
+                            </div>
+        <!--Transparent div-->
+      <div id="transparent">
+        <div id="three_pics_div">
+          <div id="images_3">
+            <div id="recent_txt">
+              <h3>More From Johnson & Johnson</h3>
+            </div>
+
+            <div id="three_img_div" class="images3">
+              <a href="#">
+                <div class="div"> <img src="data/dog.jfif" alt="">
+                  <a href="#" class="INNO_TXT">PERSONAL STORIES</a><br>
+                  "I Want to Live a Life That's Not <br> Defined By My Schizophrenia"
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="div"><img src="data/sliderimg2.jfif" alt="">
+                  <a href="#" class="INNO_TXT">PERSONAL STORIES</a><br>
+                  "I've Learned I Don't Have to <br> Apologize for My Psoriasis"
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="div"><img src="data/sch.png" alt="">
+                  <a href="#" class="INNO_TXT">PERSONAL STORIES</a><br>
+                  "1.5 Million Children Are Living <br> With HIV in Sub-Saharan <br> Africa. I'm One of the Doctors <br> Treating These Young Patients Every Day"
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--move ton top-->
+        <a class="gotopbtn" href="#" id="gototopbtn"> <i class="fas fa-arrow-up"></i> </a>
+      </div>
+      
+       <!--quick links-->
+  <div class="main_div_links" id="main_div">
+    <div id="quiclinks_main_div">
+
+      <div class="quick_links_sub_div">
+        <h3>QUICK LINKS</h3>
+        <ul class="ul">
+          <a href="#">
+            <li>Letest News</li>
+          </a>
+          <a href="#">
+            <li>About J&J</li>
+          </a>
+          <a href="#">
+            <li>Legal Notice</li>
+          </a>
+          <a href="#">
+            <li>Employees</li>
+          </a>
+          <a href="#">
+            <li>Contact Us</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="quick_links_sub_div">
+        <ul class="ul" id="ul2">
+          <a href="#">
+            <li>Careers</li>
+          </a>
+          <a href="#">
+            <li>
+              Media Center</li>
+          </a>
+          <a href="#">
+            <li>
+              Products</li>
+          </a>
+          <a href="#">
+            <li>
+              Procurement</li>
+          </a>
+          <a href="#">
+            <li>
+              Credo Integrity Line</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="quick_links_sub_div">
+        <ul class="ul" id="ul3">
+          <a href="#">
+            <li>
+              Privacy Policy</li>
+          </a>
+          <a href="#">
+            <li>
+              Cookie Policy</li>
+          </a>
+          <a href="#">
+            <li>
+              Investors</li>
+          </a>
+          <a href="#">
+            <li>
+              Our Societal Impact</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="quick_links_sub_div" id="div4">
+        <h3>MORE FROM JOHNSON & JOHNSON</h3>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp1.jfif" alt=""></a>
+          <a href="#" class="name">Janssen</a>
+          <p>Pharmaceutical Companies of Johnson & Johnson</p>
+        </div>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp2.jfif" alt=""></a>
+          <a href="#" class="name" id="textforimg2">Johnson & Johnson Medical <br> Devices Companies
+          </a>
+          <p id="pdiv2">Reimagining the Way Healthcare Is Delivered</p>
+        </div>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp3.png" alt=""></a>
+          <a href="#" class="name" id="txt3div">Johnson & Johnson Consumer <br> Health
+            Johnson</a>
+          <p id="pdiv3">Meeting the Personal Care and Wellness Needs of Consumers </p>
+        </div>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp4.png" alt=""></a>
+          <a href="#" class="name" id="txt4div">
+            Our Consumer Safety and Care <br> Commitment</a>
+          <p id="pdiv4">Your Safety Is Our Priority</p>
+        </div>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp5.png" alt=""></a>
+          <a href="#" class="name">
+            Johnson & Johnson Innovation</a>
+          <p>Advancing New Healthcare Solutions Through Collaboration</p>
+        </div>
+
+        <div class="pics_div">
+          <a href="#"><img src="data/divp16.jfif" alt=""></a>
+          <a href="#" class="name">
+            Johnson & Johnson Our Story
+          </a>
+          <p>Learn About the Company's Rich Heritage at Our Digital Museum
+          </p>
+        </div>
+        <!--Falow us div-->
+        <div id="FOLOW_DIV">
+          <h3>FOLLOW US</h3>
+          <div id="social_icon">
+            <a href="#" id="fb"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" id="insta"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" id="linkdin"><i class="fab fa-linkedin"></i></a>
+            <a href="#" id="twiter"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" id="utube"><i class="fab fa-youtube-square"></i></a>
+          </div>
+        </div>
+
+        <!--Straignt line div-->
+        <div id="straighnt_line">
+          <img src="data/line.png" alt="">
+        </div>
+
+        <!--for line below text-->
+        <div id="linebelow_txt">
+          <p>
+            This site is governed solely by applicable U.S. laws and governmental regulations. Please see our <a
+              href="#"> Privacy
+              Policy</a>. Use of this site constitutes your consent to application of such laws and regulations and to
+            our
+            <a href="#"> Privacy Policy.</a> Your use of the information on this site is subject to the terms of our <a
+              href="#">Legal Notice</a>. You
+            should view the <a href="#">News </a>section and the most recent SEC Filings in the <a href="#">
+              Investor</a> section in order to receive the
+            most current information made available by Johnson & Johnson Services, Inc.<a href="#"> Contact Us</a> with
+            any questions or
+            search this site for more information. <br>
+          <p id="donot_txt"><a href="#">Do Not Sell My Personal Information </a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Last Div-->
+  <div id="rights_div" class="rights_div">
+    <img src="data/jandj.svg" alt="">
+    <p>All contents © Copyright Johnson & Johnson Services, Inc.1997-2021. All Rights Reserved.</p>
+  </div>
+                            
+        </section>
+</body>
+</html>

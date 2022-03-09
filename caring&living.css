@@ -1,0 +1,126 @@
+#product_img_div{
+    background-image: url("data/wheel.jfif");
+    filter: grayscale(50%);
+}
+.round_img img{
+    margin-top: 50px;
+    height: 50px;
+    margin-left: -10px;
+    width: 50px;
+}
+#images_div{
+    margin-top: -50px;
+}
+.round_img h5{
+    margin-left: 45px;
+    margin-top: -58px;
+    text-align:left;
+
+}
+#behind_txt{
+    margin-left: 150px;
+    font-size: 25px;
+    margin-top: 290px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#transparent1{
+    margin-top: -190px;
+}
+#transparent2{
+    margin-top: -100px;
+}
+/*button*/
+#btn1{
+    align-content: center;
+    margin-left: 360px;
+    margin-top: 110px;
+    border-radius: 20px;
+    width: 160px;
+}
+#btn1:hover{
+    color: rgb(144, 137, 137);
+}
+
+
+/*ROund Pics main div*/
+
+.roundpic_div2{
+    display: flex;
+      height: 400px;
+      margin-top: 00px;
+      width: 800px;
+      margin-left: auto;
+      align-content: center;
+      justify-content: center;
+      margin-right: auto;
+  }
+  /*ROund Pics sub div*/
+  .roundpic_div2 div{
+  
+    align-items: center;
+    margin: 20px;
+  
+    width: 100%;
+  }
+  /*ROund Pics */
+  .roundpic_div2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    
+  }
+  /*ROund Pics text*/
+  .round_img2 a{
+  color: rgb(56, 55, 55);
+  text-decoration: none;
+    
+  }
+  .round_img2 a:hover{
+    color: rgb(88, 85, 85);
+  }
+  .round_img2 h5{
+  text-align: center;
+  margin-top: 10px;
+  
+  }
+  .round_img2 h6{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .round_img2 i{
+    color: red;
+    position: absolute;
+    top: 49.8rem;
+    margin-left: 165px;
+    
+  }
+  .round_img2 i:hover{
+    color: rgb(235, 31, 31);
+  }
+  #img2_next2{
+    top: 49.7rem;
+  }
+  #img3_next3{
+    top: 49.8rem;
+  }
+  #main_div{
+      width: 1100px;
+      margin-left: -60px;
+  }
+  .rights_div{
+    width: 1200px;
+    margin-left: -10px;
+  }
+  .gotopbtn{
+      margin-top: 340px;
+  }
+  #main_div{
+   
+    width: 1300px;
+    margin-top: -90px;
+  }
+  

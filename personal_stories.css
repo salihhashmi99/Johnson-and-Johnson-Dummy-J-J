@@ -1,0 +1,4 @@
+#product_img_div{
+    background-image: url("data/dog.jfif");
+    filter: grayscale(60%);
+}
